@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  background: linear-gradient(68.15deg, #030863 16.62%, #111226 85.61%);
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+}
+
+.cabecalho-imagem {
+  height: 72px;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 32px;
+}
+
+.cabecalho-menu-item {
+  font-family: "Oxanium", sans-serif;
+  color: #fff2e7;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.conteudo {
+  margin-bottom: 48px;
+  border-top: 0.4px solid #fff2e7;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+}
+
+.conteudo-principal-escrito-titulo {
+  font-family: "Oxanium", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  color: #fff2e7;
+}
+
+.conteudo-principal-escrito-subtitulo {
+  font-family: "Oxanium", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ecd6c4;
+}
+
+.conteudo-principal-escrito-botao {
+  background: linear-gradient(68.15deg, #1795fc 16.62%, #0e5996 85.61%);
+  width: 280px;
+  height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: "Oxanium", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #f0f0f0;
+  cursor: pointer;
+  transition: left 0.2s, top 0.2s;
+  /* text-align: start; */
+}
+
+.conteudo-principal-escrito-botao:hover {
+  background-color: rgba(236, 214, 196, 0.53);
+}
+
+.conteudo-principal-imagem {
+  height: 430px;
+}
+
+.conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+  border-top: 0.4px solid #fff2e7;
+  padding-top: 48px;
+  font-family: "Oxanium", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff2ef;
+  margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+  font-family: "Oxanium", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ecd6c4;
+}
+
+.rodape {
+  padding: 32px;
+  border-top: 0.4px solid #fff2e7;
+}
+
+.rodape-imagem {
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Mostrar tags HTML */
+.highlighted-tag {
+  position: relative; /* Posicionar o pseudo-elemento relativo ao elemento original */
+  display: inline-block;
+  border: 0; /* Remover qualquer borda padrão */
+}
+
+.highlighted-tag::before {
+  content: attr(data-tag);
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8); /* Cor de fundo semi-transparente */
+  color: black;
+  padding: 2px 5px;
+  font-size: 12px;
+  z-index: 1000; /* Garantir que as tags fiquem acima de outros elementos */
+  pointer-events: none; /* Não interfere com a interação com o conteúdo */
+  top: -5px; /* Ajuste a posição para não sobrepor o conteúdo */
+  left: 0;
+}
+
+.highlighted-tag::after {
+  content: "";
+  position: absolute;
+  border: 1px dashed rgba(255, 0, 0, 0.7); /* Borda pontilhada semi-transparente */
+  z-index: 999; /* Colocar atrás do conteúdo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Não interfere com a interação com o conteúdo */
+  box-sizing: border-box; /* Inclui a borda no tamanho total do elemento */
+}
+
+/* Estilo especial para <section>, <div>, <header>, etc. */
+.highlighted-tag-section::before,
+.highlighted-tag-div::before,
+.highlighted-tag-header::before {
+  background: rgba(0, 0, 255, 0.8); /* Cor de fundo azul semi-transparente */
+  color: white; /* Cor do texto para <section> */
+}
+
+.highlighted-tag-section::after,
+.highlighted-tag-div::after,
+.highlighted-tag-header::after {
+  border-color: rgba(0, 0, 255, 0.7); /* Cor da borda azul semi-transparente */
+}
