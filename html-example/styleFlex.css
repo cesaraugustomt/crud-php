@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+/* https://studio.ai21.com/ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  /* background: linear-gradient(68.15deg, #030863 16.62%, #111226 85.61%); */
+}
+
+.cabecalho {
+}
+
+.cabecalho-imagem {
+}
+
+.cabecalho-menu {
+}
+
+.cabecalho-menu-item {
+  /* font-family: "Oxanium", sans-serif;
+  color: #fff2e7;
+  font-weight: 400;
+  font-size: 18px; */
+}
+
+.cabecalho-menu-item:hover {
+}
+
+.conteudo {
+}
+
+.conteudo-principal {
+}
+
+.conteudo-principal-escrito {
+}
+
+.conteudo-principal-escrito-titulo {
+}
+
+.conteudo-principal-escrito-subtitulo {
+}
+
+.conteudo-principal-escrito-botao {
+}
+
+.conteudo-principal-escrito-botao:hover {
+}
+
+.conteudo-principal-imagem {
+}
+
+.conteudo-secundario {
+}
+
+.conteudo-secundario-titulo {
+  /* border-top: 0.4px solid #fff2e7; */
+}
+
+.conteudo-secundario-paragrafo {
+}
+
+.rodape {
+}
+
+.rodape-imagem {
+}
+
+@media screen and (min-width: 320px) {
+}

@@ -3,9 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Exemplo Flex Box</title>
+    <link rel="stylesheet" type="text/css" href="styleFlex.css" />
   </head>
-  <body>
-    <h1>TEST</h1>
+  <body id="page-body">
+    <header class="cabecalho">
+      <img src="logo.svg" alt="logo" class="cabecalho-imagem" />
+      <nav class="cabecalho-menu">
+        <a href="#" class="cabecalho-menu-item">pag 1</a>
+        <a href="#" class="cabecalho-menu-item">pag 2</a>
+        <a href="#" class="cabecalho-menu-item">pag 3</a>
+        <a href="#" class="cabecalho-menu-item">pag 4</a>
+        <a href="#" class="cabecalho-menu-item">pag 5</a>
+      </nav>
+    </header>
+    <main class="conteudo">
+      <section class="conteudo-principal">
+        <div class="conteudo-principal-escrito">
+          <h1 class="conteudo-principal-escrito-titulo">Viva o presente</h1>
+          <h2 class="conteudo-principal-escrito-subtitulo">
+            Acesse nossa comunidade e fique por dentro!
+          </h2>
+          <button id="acessarBotao" class="conteudo-principal-escrito-botao">
+            <a
+              href="https://www.youtube.com/watch?v=xr0lg_TJfrk"
+              target="_blank"
+              style="color: #fff"
+              >Acessar</a
+            >
+          </button>
+        </div>
+        <img
+          class="conteudo-principal-imagem"
+          src="future.png"
+          alt="Imagem da Balle Bot"
+          id="image-robo"
+        />
+      </section>
+      <section class="conteudo-secundario">
+        <h3 class="conteudo-secundario-titulo">O que ela faz por você?</h3>
+        <p class="conteudo-secundario-paragrafo">
+          1. <strong>Automação inteligente</strong>e que economiza tempo e
+          aumenta sua produtividade diariamente.
+        </p>
+        <p class="conteudo-secundario-paragrafo">
+          2. <strong>Assistente virtual</strong> eficiente que oferece suporte
+          personalizado e insights valiosos.
+        </p>
+        <p class="conteudo-secundario-paragrafo">
+          3. <strong>Tecnologia adaptativa</strong> que transforma sua interação
+          com dispositivos e serviços.
+        </p>
+      </section>
+    </main>
+    <footer class="rodape">
+      <img class="rodape-imagem" src="logo.svg" />
+    </footer>
   </body>
+  <script></script>
 </html>
