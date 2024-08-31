@@ -54,7 +54,11 @@ require 'conexao.php';
                         <td><?=date('d/m/Y', strtotime($tb_receita['data']))?></td>
                         <td>
                           <a href="receita-view.php?id=<?=$tb_receita['id']?>" class="btn btn-secondary btn-sm"><span class="bi-eye-fill">&nbsp;</span> Visualizar</a>
-                          <a href="receita-edit.php?id=<?=$tb_receita['id']?>" class="btn btn-success btn-sm"><span class="bi-pencil-fill">&nbsp;</span>Editar</a>
+                          <a href="receita-edit.php?id=<?=$tb_receita['id']?>" 
+                              class="btn btn-success btn-sm">
+                            <span class="bi-pencil-fill">&nbsp;</span>
+                            Editar
+                            </a>
                           <form action="acoes.php" method="POST" class="d-inline">
                               <button onClick="return confirm('Deseja mesmo excluir essa receita?')" type="submit" name="delete_usuario" value="<?=$tb_receita['id']?>" class="btn btn-danger btn-sm">
                               <span class="bi-trash3-fill">&nbsp;</span> Excluir
